@@ -1,0 +1,27 @@
+{
+  "name": "bookclub-backend",
+  "version": "1.0.0",
+  "description": "book club backend application",
+  "private": true,
+  "scripts": {
+    "webpack": "webpack",
+    "start": "webpack serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack serve",
+    "build": "webpack",
+    "build:server": "webpack --config=webpack.config.js --env platform=server",
+    "build:client": "webpack --config=webpack.config.js --env platform=client"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.9.0",
+    "path": "^0.12.7"
+  }
+}
